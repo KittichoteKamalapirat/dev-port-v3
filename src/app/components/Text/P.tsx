@@ -6,8 +6,6 @@ interface Props {
   children: ReactNode;
 }
 const P = ({ children, className }: Props) => {
-  return (
-    <div className={cn("text-foreground-primary", className)}>{children}</div>
-  );
+  return <div className={cn("text-blue-500", className)}>{children}</div>;
 };
 export default P;
