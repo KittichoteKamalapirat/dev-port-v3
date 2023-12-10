@@ -78,4 +78,5 @@
 
 html {
   background-color: var(--color-background-primary); /* color when overscroll */
+  scroll-behavior: smooth; /* for when clicking breadcrumb */
 }

@@ -38,7 +38,7 @@ const projects: Project[] = [
 const ProjectSection = ({ className }: Props) => {
   return (
     <section id="projects" className={className}>
-      <h2 className="text-foreground-primary mb-4">Projects</h2>
+      <h2 className="text-foreground-primary mb-4 font-semibold">Projects</h2>
       {projects.map((proj) => (
         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
           {/* left */}

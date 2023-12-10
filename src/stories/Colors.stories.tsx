@@ -64,7 +64,6 @@ const ColorPreviewItem = ({
   backgroundColor = semanticColors.background.primary,
   withTransparentPatternBg = true,
 }: ColorPreviewItemProps) => {
-  console.log("border", borderColor);
   return (
     <tr>
       <DocCellLeft>
@@ -171,7 +170,6 @@ const toColorPreviewItemProps = ({
   key,
   value,
 }: ToColorPreviewItemPropsParams): ColorPreviewItemProps => {
-  console.log("value", value);
   return {
     label: createClassNamePattern(category ? [category, key] : [key]),
     backgroundColor: value,
@@ -267,8 +265,6 @@ export const Colors = () => {
               });
             }
           );
-
-          console.log("colorItems", colorItems);
 
           return (
             <ColorSection
