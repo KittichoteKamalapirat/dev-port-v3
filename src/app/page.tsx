@@ -13,6 +13,7 @@ import ExperienceSection from "./components/sections/Experience.section";
 import HeroSection from "./components/sections/Hero.section";
 import ProjectSection from "./components/sections/Project.section";
 import SocialSection from "./components/sections/Social.section";
+import { cn } from "../lib/cn";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState<SectionState>("about");
@@ -29,7 +30,7 @@ export default function Home() {
     inView: expInView,
     entry: expEntry,
   } = useInView({
-    threshold: 0.5,
+    threshold: 0.8,
   });
   const {
     ref: projectsRef,
@@ -57,12 +58,17 @@ export default function Home() {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 items-start">
           {/* left */}
-          <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between  lg:py-24">
+          <header
+            className={cn(
+              "py-16",
+              "lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between  lg:py-24"
+            )}
+          >
             <div>
               <HeroSection />
               <BreadCrumbSection currentSection={currentSection} />
             </div>
-            <SocialSection className="mt-8 ml-1" />
+            <SocialSection className="mt-2 lg:mt-8" />
           </header>
 
           {/* right */}
@@ -79,7 +85,7 @@ export default function Home() {
           </div>
         </div>
 
-        <BlurBlob />
+        <BlurBlob className="fixed top-1/2 left-1/4 opacity-0 dark:opacity-100" />
       </Container>
     </main>
   );

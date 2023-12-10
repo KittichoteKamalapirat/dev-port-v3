@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 import { colors } from "./src/theme/colors";
 
 const config: Config = {
+  darkMode: "class", // to support dark:xxx
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",

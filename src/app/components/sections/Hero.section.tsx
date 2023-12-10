@@ -8,7 +8,7 @@ interface Props {
 const HeroSection = ({ className }: Props) => {
   return (
     <section className={cn(className)}>
-      <h1 className="text-foreground-primary text-5xl font-bold">
+      <h1 className="text-foreground-primary text-3xl lg:text-5xl font-bold">
         Kittichote Kamalapirat
       </h1>
       <h2 className="text-foreground-primary text-xl font-semibold">

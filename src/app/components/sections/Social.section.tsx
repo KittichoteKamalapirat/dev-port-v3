@@ -39,7 +39,7 @@ const socials: Social[] = [
 const SocialSection = ({ className }: Props) => {
   return (
     <section className={cn("flex items-center", className)}>
-      <ul className="mt-8 flex items-center">
+      <ul className="flex items-center">
         {socials.map((social) => (
           <li className="mr-5 text-xs">
             <a
