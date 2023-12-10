@@ -45,7 +45,7 @@ const experiences: Experience[] = [
 ];
 const ExperienceSection = ({ className }: Props) => {
   return (
-    <section className={className}>
+    <section id="experience" className={className}>
       <h2 className="text-foreground-primary mb-4">Experience</h2>
       {experiences.map((exp) => (
         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">

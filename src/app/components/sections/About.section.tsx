@@ -7,7 +7,7 @@ interface Props {
 }
 const AboutSection = ({ className }: Props) => {
   return (
-    <section className={cn(className)}>
+    <section id="about" className={cn(className)}>
       <P>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
