@@ -47,8 +47,11 @@ const ExperienceSection = ({ className }: Props) => {
   return (
     <section id="experience" className={className}>
       <h2 className="text-foreground-primary mb-4 font-semibold">Experience</h2>
-      {experiences.map((exp) => (
-        <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+      {experiences.map((exp, index) => (
+        <div
+          key={`experience-${index}`}
+          className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+        >
           {/* left */}
           <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
             {exp.startDate} - {exp.endDate}
@@ -67,8 +70,11 @@ const ExperienceSection = ({ className }: Props) => {
                 className="mt-2 flex flex-wrap"
                 aria-label="Technologies used"
               >
-                {exp.technologies.map((tech) => (
-                  <li className="mr-1.5 mt-2">
+                {exp.technologies.map((tech, subIndex) => (
+                  <li
+                    key={`experience-${index}-${subIndex}`}
+                    className="mr-1.5 mt-2"
+                  >
                     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                       {tech}
                     </div>

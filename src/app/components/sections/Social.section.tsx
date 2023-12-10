@@ -1,8 +1,7 @@
+import { ReactNode } from "react";
 import { AiFillProfile } from "react-icons/ai";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import React, { ReactNode } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { cn } from "../../../lib/cn";
-import P from "../Text/P";
 import { cvLink, githubLink, linkedInLink } from "../../constants/links";
 
 interface Props {
@@ -40,8 +39,8 @@ const SocialSection = ({ className }: Props) => {
   return (
     <section className={cn("flex items-center", className)}>
       <ul className="flex items-center">
-        {socials.map((social) => (
-          <li className="mr-5 text-xs">
+        {socials.map((social, index) => (
+          <li className="mr-5 text-xs" key={`social-${index}`}>
             <a
               href={social.href}
               className={cn("", className)}

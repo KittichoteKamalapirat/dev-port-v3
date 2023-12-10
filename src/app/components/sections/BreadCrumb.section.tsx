@@ -1,7 +1,5 @@
 "use client";
-import React, { useState } from "react";
 import { cn } from "../../../lib/cn";
-import P from "../Text/P";
 
 interface Props {
   currentSection: SectionState;
@@ -26,8 +24,8 @@ const BreadCrumbSection = ({ currentSection, className }: Props) => {
   return (
     <nav className={cn("nav hidden lg:block", className)}>
       <ul className="mt-16 w-max">
-        {sectionNavs.map((section) => (
-          <li>
+        {sectionNavs.map((section, index) => (
+          <li key={`section-nav-${index}`}>
             <a
               className={cn(
                 "group flex items-center py-3 active",

@@ -1,5 +1,3 @@
-import React from "react";
-import { cn } from "../../../lib/cn";
 import P from "../Text/P";
 
 interface Props {
@@ -39,8 +37,11 @@ const ProjectSection = ({ className }: Props) => {
   return (
     <section id="projects" className={className}>
       <h2 className="text-foreground-primary mb-4 font-semibold">Projects</h2>
-      {projects.map((proj) => (
-        <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+      {projects.map((proj, index) => (
+        <div
+          key={`project-${index}`}
+          className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+        >
           {/* left */}
           <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
             Image
@@ -59,8 +60,11 @@ const ProjectSection = ({ className }: Props) => {
                 className="mt-2 flex flex-wrap"
                 aria-label="Technologies used"
               >
-                {proj.technologies.map((tech) => (
-                  <li className="mr-1.5 mt-2">
+                {proj.technologies.map((tech, subIndex) => (
+                  <li
+                    key={`project-tech-${index}-${subIndex}`}
+                    className="mr-1.5 mt-2"
+                  >
                     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                       {tech}
                     </div>
