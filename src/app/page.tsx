@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="fixed top-0 left-0 h-screen w-screen">
+        <div className="fixed pointer-events-none top-0 left-0 h-screen w-screen">
           <MouseUpdater />
         </div>
       </Container>
