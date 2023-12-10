@@ -10,10 +10,18 @@ export default function Home() {
       <CodeBlock />
       <BlurBlob />
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          title="Title 1"
+          description="Explore starter templates for Next.js."
+        />
+        <Card
+          title="Title 2"
+          description="Explore starter templates for Next.js."
+        />
+        <Card
+          title="Title 3"
+          description="Explore starter templates for Next.js."
+        />
       </div>
     </main>
   );
