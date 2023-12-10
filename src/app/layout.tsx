@@ -6,8 +6,8 @@ import "@/theme/tailwind-directives.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dev Portfolio",
-  description: "We are builders. We are makers. We are creators.",
+  title: "Kittichote Shane",
+  description: "I am a software engineer, a builder, a creator.",
 };
 
 export default function RootLayout({

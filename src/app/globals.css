@@ -75,3 +75,7 @@
     --color-border-interactive-press: var(--color-neutral-200);
   }
 }
+
+html {
+  background-color: var(--color-background-primary); /* color when overscroll */
+}
