@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import P from "../app/components/Text/P";
 
 const meta = {
-  title: "Text/P",
+  title: "Design System/Text/P",
   component: P,
   tags: ["autodocs"],
   parameters: {

@@ -7,7 +7,7 @@ interface Props {
 export const Divider = ({ className }: Props) => {
   return (
     <div
-      className={clsx("border-t-4 border-solid border-neutral-400", className)}
+      className={clsx("border-t-2 border-solid border-neutral-100", className)}
     />
   );
 };

@@ -9,33 +9,14 @@
  * @satisfies {TailwindThemeConfig['borderColor']}
  */
 export const borderColors = {
-  bounds: "var(--color-border-bounds)",
-  bounds_solid: "var(--color-border-bounds_solid)",
-  divider: "var(--color-border-divider)",
+  light: "var(--color-border-light)",
+  medium: "var(--color-border-medium)",
+  strong: "var(--color-border-strong)",
   focus: "var(--color-border-focus)",
-  disabled: "var(--color-border-disabled)",
-  input_controls: {
-    enable: "var(--color-border-input_controls-enable)",
-    hover: "var(--color-border-input_controls-hover)",
-    press: "var(--color-border-input_controls-press)",
-    active: "var(--color-border-input_controls-active)",
-    selected: {
-      enable: "var(--color-border-input_controls-selected-enable)",
-      hover: "var(--color-border-input_controls-selected-hover)",
-      press: "var(--color-border-input_controls-selected-press)",
-    },
-  },
   interactive: {
-    secondary: {
-      enable: "var(--color-border-interactive-secondary-enable)",
-      hover: "var(--color-border-interactive-secondary-hover)",
-      press: "var(--color-border-interactive-secondary-press)",
-    },
-  },
-  system: {
-    danger: {
-      primary: "var(--color-border-system-danger-primary)",
-    },
+    enable: "var(--color-border-interactive-enable)",
+    hover: "var(--color-border-interactive-hover)",
+    press: "var(--color-border-interactive-press)",
   },
 };
 
@@ -44,35 +25,12 @@ export const borderColors = {
  * @satisfies {TailwindThemeConfig['colors']}
  */
 export const primitiveColors = {
-  // brand: {
-  //   accent: {
-  //     100: "var(--color-brand-accent-100)",
-  //     200: "var(--color-brand-accent-200)",
-  //     300: "var(--color-brand-accent-300)",
-  //     400: "var(--color-brand-accent-400)",
-  //     500: "var(--color-brand-accent-500)",
-  //     600: "var(--color-brand-accent-600)",
-  //     700: "var(--color-brand-accent-700)",
-  //     800: "var(--color-brand-accent-800)",
-  //   },
-  //   on_light: {
-  //     primary: "var(--color-brand-on_light-primary)",
-  //     accent: "var(--color-brand-on_light-accent)",
-  //   },
-  //   on_dark: {
-  //     // This color has some opacity built-in, you cannot override it
-  //     primary: "var(--color-brand-on_dark-primary)",
-  //     accent: "var(--color-brand-on_dark-accent)",
-  //   },
-  //   background: {
-  //     primary: "var(--color-brand-background-primary)",
-  //   },
-  // },
-  // base: {
-  //   black: "var(--color-base-black)",
-  //   white: "var(--color-base-white)",
-  // },
+  base: {
+    black: "var(--color-base-black)",
+    white: "var(--color-base-white)",
+  },
   neutral: {
+    50: "var(--color-neutral-50)",
     100: "var(--color-neutral-100)",
     200: "var(--color-neutral-200)",
     300: "var(--color-neutral-300)",
@@ -82,7 +40,20 @@ export const primitiveColors = {
     700: "var(--color-neutral-700)",
     800: "var(--color-neutral-800)",
     900: "var(--color-neutral-900)",
-    1000: "var(--color-neutral-1000)",
+    950: "var(--color-neutral-950)",
+  },
+  amber: {
+    50: "var(--color-amber-50)",
+    100: "var(--color-amber-100)",
+    200: "var(--color-amber-200)",
+    300: "var(--color-amber-300)",
+    400: "var(--color-amber-400)",
+    500: "var(--color-amber-500)",
+    600: "var(--color-amber-600)",
+    700: "var(--color-amber-700)",
+    800: "var(--color-amber-800)",
+    900: "var(--color-amber-900)",
+    950: "var(--color-amber-950)",
   },
 };
 

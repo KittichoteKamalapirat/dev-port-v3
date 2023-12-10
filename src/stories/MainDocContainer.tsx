@@ -8,7 +8,7 @@ const MainDocContainer = ({
   ...restProps
 }: MainDocContainerProps) => {
   return (
-    <div className="py-8 px-6 md:py-20 md:px-10">
+    <div className="p-4 md:p-8">
       <main
         {...restProps}
         className={cn("space-y-32 mx-auto max-w-screen-md", className)}

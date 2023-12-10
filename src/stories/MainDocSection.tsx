@@ -18,11 +18,11 @@ const MainDocSection = ({
   const DescriptionContainer = typeof description === "string" ? "p" : "div";
 
   return (
-    <section className="py-20">
+    <section className="py-4">
       <header className="my-4">
-        <P className="text-foreground-primary text-xl font-bold">{title}</P>
+        <P className="text-foreground-primary text-2xl font-bold">{title}</P>
         {Boolean(description) && (
-          <DescriptionContainer className="text-foreground-secondary space-y-space-gap-lg">
+          <DescriptionContainer className="text-foreground-secondary space-y-space-gap-lg mt-4">
             {description}
           </DescriptionContainer>
         )}

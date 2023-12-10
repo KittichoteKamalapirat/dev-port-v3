@@ -12,14 +12,14 @@ const DocSection = ({ title, description, children }: DocSectionProps) => {
 
   return (
     <section>
-      <header className="mb-24px">
-        <h3 className="mb-8px">{title}</h3>
+      <header className="mb-6">
+        <h3 className="mb-2 text-lg font-bold">{title}</h3>
         {Boolean(description) && (
           <DescriptionContainer className="typo-base-text-md text-foreground-secondary space-y-space-gap-lg">
             {description}
           </DescriptionContainer>
         )}
-        <Divider className="my-16px" />
+        <Divider className="my-4" />
       </header>
       <div>{children}</div>
     </section>

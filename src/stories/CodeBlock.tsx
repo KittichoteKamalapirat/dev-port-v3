@@ -5,7 +5,7 @@ const CodeBlock = ({ children, className }: ComponentProps<"code">) => {
   return (
     <code
       className={cn(
-        "block bg-background-secondary p-8px rounded-4px font_size-14px_em text-foreground-primary ring-w-100 ring-inset ring-base-black/8 dark:ring-base-white/12",
+        "block bg-background-secondary p-2 rounded-md text-foreground-primary ring-[1px] ring-border-light",
         className
       )}
     >

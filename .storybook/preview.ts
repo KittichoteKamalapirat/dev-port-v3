@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
 import "../src/app/globals.css";
+import "../src/theme/tailwind-directives.css";
 
 const preview: Preview = {
   parameters: {
@@ -12,5 +13,7 @@ const preview: Preview = {
     },
   },
 };
+
+export { decorators } from "./decorators"; // for dark theme
 
 export default preview;

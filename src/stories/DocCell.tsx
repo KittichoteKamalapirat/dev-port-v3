@@ -46,8 +46,8 @@ const DocCell = ({
     <Comp
       {...restProps}
       className={cn(
-        "py-8px text-left",
-        { "pl-32px": withPaddingLeft },
+        "py-2 text-left",
+        { "pl-8": withPaddingLeft },
         defaultClassName,
         className
       )}

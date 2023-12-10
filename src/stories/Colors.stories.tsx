@@ -1,5 +1,5 @@
 import { CSSProperties, ReactNode } from "react";
-import { primitiveColors, semanticColors } from "../theme/colors";
+import { borderColors, primitiveColors, semanticColors } from "../theme/colors";
 
 import { Meta } from "@storybook/react";
 
@@ -61,15 +61,16 @@ const ColorPreviewItem = ({
   foregroundColor,
   borderColor,
   backgroundImage,
-  // backgroundColor = semanticColors.background.primary,
+  backgroundColor = semanticColors.background.primary,
   withTransparentPatternBg = true,
 }: ColorPreviewItemProps) => {
+  console.log("border", borderColor);
   return (
     <tr>
       <DocCellLeft>
         <div
           // Only show shadow when there is no borderColor to not interfere with the preview
-          className={cn("relative h-10 w-full rounded-default", {
+          className={cn("relative h-10 w-full rounded-md", {
             shadow: !borderColor,
             // Repeating linear gradient to simulate a checkerboard pattern
             // making it noticeable if some color is semi-transaparent.
@@ -78,10 +79,10 @@ const ColorPreviewItem = ({
         >
           <div
             className={cn(
-              "absolute inset-0 z-10 rounded-default grid place-content-center",
+              "absolute inset-0 z-10 rounded-md grid place-content-center",
               {
                 // Add ring only when there's borderColor
-                "ring-w-100 ring-inset": borderColor,
+                "ring-1 ring-inset": borderColor,
               }
             )}
             style={
@@ -89,7 +90,7 @@ const ColorPreviewItem = ({
                 color: foregroundColor
                   ? configToCssColor(foregroundColor)
                   : undefined,
-                // backgroundColor: configToCssColor(backgroundColor),
+                backgroundColor: configToCssColor(backgroundColor),
                 backgroundImage: backgroundImage
                   ? configToCssColor(backgroundImage)
                   : undefined,
@@ -170,6 +171,7 @@ const toColorPreviewItemProps = ({
   key,
   value,
 }: ToColorPreviewItemPropsParams): ColorPreviewItemProps => {
+  console.log("value", value);
   return {
     label: createClassNamePattern(category ? [category, key] : [key]),
     backgroundColor: value,
@@ -194,8 +196,6 @@ const primitiveColorSectionDescription: Record<string, ReactNode> = {
 export const Colors = () => {
   return (
     <MainDocContainer>
-      <p className="text-red-500"> xxasdfx</p>
-      <P>xxx</P>
       <MainDocSection
         title="Semantic Colors"
         description={
@@ -268,6 +268,8 @@ export const Colors = () => {
             }
           );
 
+          console.log("colorItems", colorItems);
+
           return (
             <ColorSection
               key={category}
@@ -277,6 +279,34 @@ export const Colors = () => {
             />
           );
         })}
+      </MainDocSection>
+
+      <MainDocSection
+        title="Border Colors"
+        description={
+          <p>
+            Border colors can be used for border colors by{" "}
+            <InlineCode children="<border,ring,outline>-<token>" />. But they
+            also avaible globally with{" "}
+            <InlineCode children="<utility>-border-<token>" />, e.g{" "}
+            <InlineCode>bg-border-bounds</InlineCode>.
+          </p>
+        }
+      >
+        <ColorList
+          colorItems={flattenTailwindConfigToArr(borderColors).map(
+            ({ key, value }): ColorPreviewItemProps => {
+              return {
+                label: createClassNamePattern(["border", key], {
+                  prefix: null,
+                }),
+                borderColor: value,
+                colorValue: value,
+                withTransparentPatternBg: false,
+              };
+            }
+          )}
+        />
       </MainDocSection>
     </MainDocContainer>
   );
