@@ -1,0 +1,18 @@
+.blob {
+  position: absolute;
+
+  background: radial-gradient(
+      circle at center,
+      rgba(18, 113, 255, 0.1) 0,
+      rgba(18, 113, 255, 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
+
+  width: 1200px;
+  height: 1200px;
+  transform-origin: center center;
+  animation: moveVertical 30s ease infinite;
+  pointer-events: none;
+  opacity: 1;
+}

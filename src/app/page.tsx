@@ -1,9 +1,10 @@
 "use client";
 import { useInView } from "react-intersection-observer";
-import BlurBlob from "./components/BlurBlob";
 import Container from "./components/Container";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { cn } from "../lib/cn";
+import MouseUpdater from "./components/MouseUpdater";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/sections/About.section";
 import BreadCrumbSection, {
@@ -13,11 +14,11 @@ import ExperienceSection from "./components/sections/Experience.section";
 import HeroSection from "./components/sections/Hero.section";
 import ProjectSection from "./components/sections/Project.section";
 import SocialSection from "./components/sections/Social.section";
-import { cn } from "../lib/cn";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState<SectionState>("about");
 
+  const appRef = useRef<any>(); // TODO: fix any
   const {
     ref: aboutRef,
     inView: aboutInView,
@@ -52,7 +53,10 @@ export default function Home() {
     if (projectsInView) setCurrentSection("projects");
   }, [projectsInView]);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-background-primary">
+    <main
+      className="flex min-h-screen flex-col items-center justify-between bg-background-primary"
+      ref={appRef}
+    >
       <Navbar />
 
       <Container>
@@ -85,7 +89,9 @@ export default function Home() {
           </div>
         </div>
 
-        <BlurBlob className="fixed top-1/2 left-1/4 opacity-0 dark:opacity-100" />
+        <div className="fixed top-0 left-0 h-screen w-screen">
+          <MouseUpdater />
+        </div>
       </Container>
     </main>
   );
