@@ -13,7 +13,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "clsx": "^2.0.0",
+    "flat": "^6.0.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
@@ -27,6 +29,8 @@
     "@storybook/addon-interactions": "^7.6.4",
     "@storybook/addon-links": "^7.6.4",
     "@storybook/addon-onboarding": "^1.0.9",
+    "@storybook/addon-styling-webpack": "^0.0.5",
+    "@storybook/addon-themes": "^7.6.4",
     "@storybook/blocks": "^7.6.4",
     "@storybook/nextjs": "^7.6.4",
     "@storybook/react": "^7.6.4",

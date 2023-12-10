@@ -1,6 +1,8 @@
 import type { StoryFn, Meta } from "@storybook/react";
 
-import ColorThemeToggler, { ColorThemeTogglerProps } from ".";
+import ColorThemeToggler, {
+  ColorThemeTogglerProps,
+} from "../app/components/ColorThemeToggler";
 
 const Story: Meta<typeof ColorThemeToggler> = {
   component: ColorThemeToggler,
