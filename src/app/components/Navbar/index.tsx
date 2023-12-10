@@ -1,9 +1,10 @@
 "use client";
-// import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
+
 import clsx from "clsx";
 import Logo from "../../../assets/logo.svg";
 
 import ColorThemeToggler from "../ColorThemeToggler";
+
 const Navbar = () => {
   return (
     <nav

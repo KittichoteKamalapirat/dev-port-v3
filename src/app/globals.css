@@ -10,9 +10,9 @@
     --color-base-black: black;
     --color-base-white: white;
 
-    /* --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
+    --background-end-rgb: 0, 0, 0;
 
     --color-neutral-50: #fafafa;
     --color-neutral-100: #f5f5f5;
@@ -74,15 +74,4 @@
     --color-border-interactive-hover: var(--color-neutral-400);
     --color-border-interactive-press: var(--color-neutral-200);
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  /* background: rgb(var(--color-background-primary)); */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }
