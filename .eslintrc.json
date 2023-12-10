@@ -1,7 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "plugin:storybook/recommended"],
   "rules": {
-    "react/no-children-prop": "warn",
-    "react/no-unescaped-entities": "warn"
+    "react/no-children-prop": "ignore",
+    "react/no-unescaped-entities": "ignore"
   }
 }
