@@ -8,6 +8,7 @@ import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { useClickOutsideHamburger } from "../../hooks/useClickOutsideHamburger";
 
 import ColorThemeToggler from "../ColorThemeToggler";
+import Image from "next/image";
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
@@ -26,13 +27,18 @@ const Navbar = () => {
     <nav
       className={clsx(
         "fixed left-0 right-0 top-0 z-[100]", // make fixed so can set content 100% with top padding
-        " border-gray-200 bg-white dark:border-gray-700 dark:bg-dm-bg"
+        " border-gray-200 bg-background-primary dark:border-gray-700 "
       )}
     >
       <div className="mx-auto flex flex-wrap items-center justify-between p-4">
-        {/* <a href={urlResolver.home} className="flex items-center">
-          <Logo className="h-6 w-6 text-lm-text dark:text-dm-text lg:h-8 lg:w-8" />
-        </a> */}
+        <Image
+          className="dark:invert"
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={100}
+          height={20}
+          priority
+        />
 
         <div className="relative flex gap-4">
           {/* Shown by default */}

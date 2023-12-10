@@ -2,6 +2,7 @@ import BlurBlob from "./components/BlurBlob";
 import Card from "./components/Card";
 import CodeBlock from "./components/CodeBlock";
 import Navbar from "./components/Navbar";
+import P from "./components/Text/P";
 
 export default function Home() {
   return (
@@ -16,10 +17,7 @@ export default function Home() {
         <Card />
         <Card />
 
-        <p className="text-foreground-primary">Foreground primary</p>
-        <p className="text-foreground-secondary">Foreground primary</p>
-        <p className="text-foreground-tertiary">Foreground primary</p>
-        <p className="text-background-primary">Background primary</p>
+        <P>Foreground primary</P>
       </div>
     </main>
   );
