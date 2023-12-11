@@ -81,10 +81,10 @@ export default function Home() {
               <AboutSection />
             </div>
             <div ref={expRef}>
-              <ExperienceSection className="mt-12" />
+              <ExperienceSection className="mt-8 lg:mt-16" />
             </div>
             <div ref={projectsRef}>
-              <ProjectSection className="mt-12" />
+              <ProjectSection className="mt-8 lg:mt-16" />
             </div>
           </div>
         </div>

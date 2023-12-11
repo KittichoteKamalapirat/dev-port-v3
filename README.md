@@ -31,4 +31,6 @@
 
 ### Credit
 
-This repo was forked from [bchaing7's v4](https://github.com/bchiang7/v4).See the original website at [brittanychiang.com](https://brittanychiang.com).
+This repo was highly inspired by [bchaing7's v5](https://brittanychiang.com/).
+Unfortunately, here v5 of her portfolio is not opensourced (at the time I wrote this) so I made my own.
+Luckily, her v4 is open-source at [bchaing7's v4](https://v4.brittanychiang.com/)

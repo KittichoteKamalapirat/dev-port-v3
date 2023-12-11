@@ -1,43 +1,39 @@
-import React from "react";
-import { cn } from "../../../lib/cn";
 import P from "../Text/P";
+import styles from "./About.section.module.css";
+import pojita from "../../../assets/pojita.png";
 
 interface Props {
   className?: string;
 }
 const AboutSection = ({ className }: Props) => {
   return (
-    <section id="about" className={cn(className)}>
+    <section id="about" className={className}>
       {/* <h2 className="text-foreground-primary mb-4 font-semibold">Hi!</h2> */}
-      <P>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+      <P className="text-foreground-secondary">
+        I love{" "}
+        <span className="text-foreground-primary">
+          creating interactive websites and intuitive User Experience.
+        </span>{" "}
+        I usually code during my full-time job as well as during my free-time.
       </P>
-      <P className="mt-4">
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and
+      <P className="mt-4 text-foreground-secondary">
+        My current day-to-day technologies include{" "}
+        <span className="text-foreground-primary">
+          TypeScript, Python, React, Tailwind, Postgres, GraphqQL, and Docker.
+        </span>
       </P>
-      <P className="mt-4">
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and
-      </P>
-      <P className="mt-4">
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and
-      </P>
-      <P className="mt-4">
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and
+      <P className="mt-4 text-foreground-secondary">
+        Besides staring at my computer when coding, I also stare at it when{" "}
+        <span className="text-foreground-primary">reading manga</span>{" "}
+        &#40;Recommend{" "}
+        <span
+          className={
+            "lg:hover:text-foreground-primary lg:cursor-[url('/pojita-32x32.png'),_pointer]"
+          }
+        >
+          "Chainsaw man"
+        </span>{" "}
+        and "Summer Time Rendering" this year&#41;
       </P>
     </section>
   );
