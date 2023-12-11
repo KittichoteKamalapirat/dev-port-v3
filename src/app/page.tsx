@@ -14,6 +14,7 @@ import ExperienceSection from "./components/sections/Experience.section";
 import HeroSection from "./components/sections/Hero.section";
 import ProjectSection from "./components/sections/Project.section";
 import SocialSection from "./components/sections/Social.section";
+import ToolsSection from "./components/sections/Tools.section";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState<SectionState>("about");
@@ -87,6 +88,7 @@ export default function Home() {
             <div ref={projectsRef}>
               <ProjectSection className="mt-8 lg:mt-16" />
             </div>
+            <ToolsSection className="mt-8 lg:mt-24" />
           </div>
         </div>
 
