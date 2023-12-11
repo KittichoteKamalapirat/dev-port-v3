@@ -1,6 +1,7 @@
 import { FiExternalLink } from "react-icons/fi";
 
 import P from "../Text/P";
+import Image from "next/image";
 
 interface Props {
   className?: string;
@@ -11,6 +12,7 @@ interface Project {
   description: string;
   technologies: string[];
   link: string;
+  thumbnail: string;
 }
 const projects: Project[] = [
   {
@@ -20,6 +22,7 @@ const projects: Project[] = [
 
     technologies: ["Google Cloud Platform", "OpenAI", "Python"],
     link: "https://www.jouzuspeak.com/",
+    thumbnail: "/jouzu.webp",
   },
   {
     title: "Online Wedding Invitation",
@@ -27,6 +30,7 @@ const projects: Project[] = [
       "A wedding website for my friend to make it easier for guests to RSVP and for us to manage the guest list.",
     technologies: ["Google Sheets API", "Google Maps API", "i18n"],
     link: "https://www.dev.parkandrotela.com/",
+    thumbnail: "/wedding.webp",
   },
 ];
 const ProjectSection = ({ className }: Props) => {
@@ -39,7 +43,13 @@ const ProjectSection = ({ className }: Props) => {
             <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:cursor-pointer">
               {/* left */}
               <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-foreground-secondary sm:col-span-2">
-                Image
+                <Image
+                  alt={proj.title}
+                  src={proj.thumbnail}
+                  width={200}
+                  height={120}
+                  className="rounded-md"
+                />
               </header>
               {/* right */}
               <div className="z-10 sm:col-span-6">
