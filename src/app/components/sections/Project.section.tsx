@@ -28,14 +28,6 @@ const projects: Project[] = [
     technologies: ["Google Sheets API", "Google Maps API", "i18n"],
     link: "https://www.dev.parkandrotela.com/",
   },
-  {
-    title: "Software Engineer",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1",
-
-    technologies: ["React", "Typescript", "Tailwindcss", "Nx"],
-    link: "",
-  },
 ];
 const ProjectSection = ({ className }: Props) => {
   return (
