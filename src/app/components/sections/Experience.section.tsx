@@ -64,11 +64,8 @@ const ExperienceSection = ({ className }: Props) => {
       <h2 className="text-foreground-primary mb-4 font-semibold">Experience</h2>
       <ul className="group/list">
         {experiences.map((exp, index) => (
-          <li className="mb-12">
-            <div
-              key={`experience-${index}`}
-              className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:cursor-pointer "
-            >
+          <li className="mb-12" key={`experience-${index}`}>
+            <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:cursor-pointer ">
               {/* left */}
               <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
                 {exp.startDate} - {exp.endDate}
