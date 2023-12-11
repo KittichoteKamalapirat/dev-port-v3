@@ -38,41 +38,95 @@
     --color-amber-900: #78350f;
     --color-amber-950: #451a03;
 
-    /* theme */
-    --color-foreground-primary: var(--color-neutral-800);
+    --color-pink-50: #fdf2f8;
+    --color-pink-100: #fce7f3;
+    --color-pink-200: #fbcfe8;
+    --color-pink-300: #f9a8d4;
+    --color-pink-400: #f472b6;
+    --color-pink-500: #ec4899;
+    --color-pink-600: #db2777;
+    --color-pink-700: #be185d;
+    --color-pink-800: #9d174d;
+    --color-pink-900: #831843;
+    --color-pink-950: #500724;
+
+    /* semantic */
+    /* foreground */
+    --color-foreground-primary: var(--color-neutral-900);
     --color-foreground-secondary: var(--color-neutral-600);
     --color-foreground-tertiary: var(--color-neutral-400);
 
+    --color-foreground-interactive-hover: var(--color-neutral-900); /* bright */
+    --color-foreground-interactive-enable: var(
+      --color-neutral-600
+    ); /* a bit pale */
+    --color-foreground-interactive-disabled: var(--color-neutral-400);
+
+    /* background */
     --color-background-primary: var(--color-base-white);
     --color-background-secondary: var(--color-neutral-100);
     --color-background-tertiary: var(--color-neutral-200);
 
+    --color-background-interactive-disabled: var(--color-neutral-300);
+    --color-background-interactive-enable: var(
+      --color-neutral-100
+    ); /* a bit pale */
+    --color-background-interactive-hover: var(--color-neutral-50); /* bright */
+
+    /* border */
     --color-border-light: var(--color-neutral-200);
     --color-border-medium: var(--color-neutral-400);
     --color-border-strong: var(--color-neutral-600);
-    --color-border-focus: var(--color-amber-300);
+    --color-border-focus: var(--color-brand-primary);
+
     --color-border-interactive-enable: var(--color-neutral-200);
     --color-border-interactive-hover: var(--color-neutral-400);
     --color-border-interactive-press: var(--color-neutral-600);
+
+    /* brand */
+    --color-brand-primary: var(--color-pink-500);
+    --color-brand-secondary: var(--color-pink-300);
+    --color-brand-tertiary: var(--color-pink-200);
   }
 
   .dark {
     /** Global semantic color tokens */
-    --color-foreground-primary: var(--color-neutral-100);
-    --color-foreground-secondary: var(--color-neutral-300);
+    /* Foreground */
+    --color-foreground-primary: var(--color-neutral-50);
+    --color-foreground-secondary: var(--color-neutral-400);
     --color-foreground-tertiary: var(--color-neutral-500);
 
+    --color-foreground-interactive-hover: var(--color-neutral-50); /* bright */
+    --color-foreground-interactive-enable: var(
+      --color-neutral-300
+    ); /* a bit pale */
+    --color-foreground-interactive-disabled: var(--color-neutral-500);
+
+    /* Background */
     --color-background-primary: var(--color-neutral-900);
     --color-background-secondary: var(--color-neutral-700);
     --color-background-tertiary: var(--color-neutral-500);
 
+    --color-background-interactive-disabled: var(--color-neutral-600);
+    --color-background-interactive-enable: var(
+      --color-neutral-800
+    ); /* a bit pale */
+    --color-background-interactive-hover: var(--color-neutral-900); /* bright */
+
+    /* Border */
     --color-border-light: var(--color-neutral-600);
     --color-border-medium: var(--color-neutral-400);
     --color-border-strong: var(--color-neutral-200);
-    --color-border-focus: var(--color-amber-600);
+    --color-border-focus: var(--color-brand-primary);
+
     --color-border-interactive-enable: var(--color-neutral-600);
     --color-border-interactive-hover: var(--color-neutral-400);
     --color-border-interactive-press: var(--color-neutral-200);
+
+    /* brand */
+    --color-brand-primary: var(--color-pink-500);
+    --color-brand-secondary: var(--color-pink-300);
+    --color-brand-tertiary: var(--color-pink-200);
   }
 }
 

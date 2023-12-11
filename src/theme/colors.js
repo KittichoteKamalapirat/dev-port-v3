@@ -5,22 +5,6 @@
  */
 
 /**
- * Design system border colors
- * @satisfies {TailwindThemeConfig['borderColor']}
- */
-export const borderColors = {
-  light: "var(--color-border-light)",
-  medium: "var(--color-border-medium)",
-  strong: "var(--color-border-strong)",
-  focus: "var(--color-border-focus)",
-  interactive: {
-    enable: "var(--color-border-interactive-enable)",
-    hover: "var(--color-border-interactive-hover)",
-    press: "var(--color-border-interactive-press)",
-  },
-};
-
-/**
  * Primitive colors mostly support opacity modifier (<token>/<opacity-value>).
  * @satisfies {TailwindThemeConfig['colors']}
  */
@@ -55,6 +39,19 @@ export const primitiveColors = {
     900: "var(--color-amber-900)",
     950: "var(--color-amber-950)",
   },
+  pink: {
+    50: "var(--color-pink-50)",
+    100: "var(--color-pink-100)",
+    200: "var(--color-pink-200)",
+    300: "var(--color-pink-300)",
+    400: "var(--color-pink-400)",
+    500: "var(--color-pink-500)",
+    600: "var(--color-pink-600)",
+    700: "var(--color-pink-700)",
+    800: "var(--color-pink-800)",
+    900: "var(--color-pink-900)",
+    950: "var(--color-pink-950)",
+  },
 };
 
 /**
@@ -66,48 +63,42 @@ export const semanticColors = {
     secondary: "var(--color-foreground-secondary)",
     tertiary: "var(--color-foreground-tertiary)",
     interactive: {
+      disabled: "var(--color-foreground-interactive-disabled)",
       enable: "var(--color-foreground-interactive-enable)",
       hover: "var(--color-foreground-interactive-hover)",
-      focus: "var(--color-foreground-interactive-focus)",
-      press: "var(--color-foreground-interactive-press)",
-      active: "var(--color-foreground-interactive-active)",
-      disabled: "var(--color-foreground-interactive-disabled)",
-    },
-    accent: {
-      purple: "var(--color-foreground-accent-purple)",
-      green: "var(--color-foreground-accent-green)",
     },
   },
   background: {
     primary: "var(--color-background-primary)",
     secondary: "var(--color-background-secondary)",
     tertiary: "var(--color-background-tertiary)",
-    opacity_primary: "var(--color-background-opacity_primary)",
-    opacity_secondary: "var(--color-background-opacity_secondary)",
-    overlay: "var(--color-background-overlay)",
     interactive: {
-      primary: {
-        enable: "var(--color-background-interactive-primary-enable)",
-        hover: "var(--color-background-interactive-primary-hover)",
-        focus: "var(--color-background-interactive-primary-focus)",
-        press: "var(--color-background-interactive-primary-press)",
-        inverted: "var(--color-background-interactive-primary-inverted)",
-      },
-      secondary: {
-        hover: "var(--color-background-interactive-secondary-hover)",
-        focus: "var(--color-background-interactive-secondary-focus)",
-        press: "var(--color-background-interactive-secondary-press)",
-        active: "var(--color-background-interactive-secondary-active)",
-      },
-      tertiary: {
-        hover: "var(--color-background-interactive-tertiary-hover)",
-        focus: "var(--color-background-interactive-tertiary-focus)",
-        press: "var(--color-background-interactive-tertiary-press)",
-        active: "var(--color-background-interactive-tertiary-active)",
-      },
       disabled: "var(--color-background-interactive-disabled)",
-      "disabled-handle": "var(--color-background-interactive-disabled-handle)",
+      enable: "var(--color-background-interactive-enable)",
+      hover: "var(--color-background-interactive-hover)",
     },
+  },
+  brand: {
+    primary: "var(--color-brand-primary)",
+    secondary: "var(--color-brand-secondary)",
+    tertiary: "var(--color-brand-tertiary)",
+  },
+};
+
+/**
+ * Design system border colors
+ * @satisfies {TailwindThemeConfig['borderColor']}
+ */
+
+export const borderColors = {
+  light: "var(--color-border-light)",
+  medium: "var(--color-border-medium)",
+  strong: "var(--color-border-strong)",
+  focus: "var(--color-border-focus)",
+  interactive: {
+    enable: "var(--color-border-interactive-enable)",
+    hover: "var(--color-border-interactive-hover)",
+    press: "var(--color-border-interactive-press)",
   },
 };
 

@@ -48,7 +48,7 @@ const SocialSection = ({ className }: Props) => {
               rel="noopener noreferrer"
               aria-label={`${social.ariaLabel}(opens in a new tab)`}
             >
-              <div className="text-foreground-primary">{social.icon}</div>
+              <div className="text-foreground-secondary">{social.icon}</div>
             </a>
           </li>
         ))}

@@ -67,7 +67,7 @@ const ExperienceSection = ({ className }: Props) => {
           <li className="mb-12" key={`experience-${index}`}>
             <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:cursor-pointer ">
               {/* left */}
-              <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+              <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-foreground-secondary sm:col-span-2">
                 {exp.startDate} - {exp.endDate}
               </header>
               {/* right */}
@@ -78,7 +78,7 @@ const ExperienceSection = ({ className }: Props) => {
                       href={exp.link}
                       target="_blank"
                       aria-label={`${exp.title}(opens in new tab))`}
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                      className="inline-flex items-baseline font-medium leading-tight text-foreground-primary hover:text-brand-primary focus-visible:text-brand-primary  group/link text-base"
                       rel="noreferrer noopener"
                     >
                       {/* make the entire card a link */}
@@ -100,7 +100,7 @@ const ExperienceSection = ({ className }: Props) => {
                         key={`experience-${index}-${subIndex}`}
                         className="mr-1.5 mt-2"
                       >
-                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                        <div className="flex items-center rounded-full bg-rose-400 bg-opacity-10 px-3 py-1 text-xs font-medium leading-5 text-brand-primary">
                           {tech}
                         </div>
                       </li>

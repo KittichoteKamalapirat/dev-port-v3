@@ -1,6 +1,4 @@
 import P from "../Text/P";
-import styles from "./About.section.module.css";
-import pojita from "../../../assets/pojita.png";
 
 interface Props {
   className?: string;
@@ -12,9 +10,9 @@ const AboutSection = ({ className }: Props) => {
       <P className="text-foreground-secondary">
         I love{" "}
         <span className="text-foreground-primary">
-          creating interactive websites and intuitive User Experience.
+          creating intuitive User Experience.
         </span>{" "}
-        I usually code during my full-time job as well as during my free-time.
+        I code during my full-time job as well as my free-time.
       </P>
       <P className="mt-4 text-foreground-secondary">
         My current day-to-day technologies include{" "}

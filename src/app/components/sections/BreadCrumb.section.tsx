@@ -35,8 +35,8 @@ const BreadCrumbSection = ({ currentSection, className }: Props) => {
               )}
               href={section.href}
             >
-              <span className="nav-indicator mr-4 h-px w-8 bg-border-medium transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-              <span className="nav-text text-xs uppercase tracking-widest  group-hover:text-slate-200 group-focus-visible:text-slate-200">
+              <span className="nav-indicator mr-4 h-px w-8 bg-border-medium transition-all group-hover:w-16 group-hover:bg-foreground-primary group-focus-visible:w-16 group-focus-visible:bg-foreground-primary motion-reduce:transition-none"></span>
+              <span className="nav-text text-xs uppercase tracking-widest  group-hover:text-foreground-primary group-focus-visible:text-foreground-primary">
                 {section.title}
               </span>
             </a>
