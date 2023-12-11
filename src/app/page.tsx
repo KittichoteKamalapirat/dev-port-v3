@@ -31,7 +31,7 @@ export default function Home() {
     inView: expInView,
     entry: expEntry,
   } = useInView({
-    threshold: 0.8,
+    threshold: 1,
   });
   const {
     ref: projectsRef,
@@ -52,6 +52,7 @@ export default function Home() {
   useEffect(() => {
     if (projectsInView) setCurrentSection("projects");
   }, [projectsInView]);
+
   return (
     <main
       className="flex min-h-screen flex-col items-center justify-between bg-background-primary"

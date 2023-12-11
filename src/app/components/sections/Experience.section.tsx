@@ -1,3 +1,4 @@
+import { FiExternalLink } from "react-icons/fi";
 import P from "../Text/P";
 
 interface Props {
@@ -11,6 +12,7 @@ interface Experience {
   technologies: string[];
   startDate: string;
   endDate: string;
+  link: string;
 }
 const experiences: Experience[] = [
   {
@@ -21,15 +23,17 @@ const experiences: Experience[] = [
     technologies: ["React", "Typescript", "Tailwindcss", "Playwright"],
     startDate: "2022",
     endDate: "Present",
+    link: "https://earnin.com/",
   },
   {
-    title: "Software Engineer (Contract)",
+    title: "Software Engineer Contract",
     commpany: "Endo Supply",
     description:
       "Designed and coded an endoscope management system which connects to storage cabinets to monitor endoscope usage history in a public hospital.",
-    technologies: ["React", "Typescript", "Tailwindcss", "Nx"],
+    technologies: ["React", "Typescript", "Tailwindcss", "Node.JS"],
     startDate: "Aug",
     endDate: "Oct 2022",
+    link: "https://www.endo-supply.com/",
   },
   {
     title: "Senior React Developer",
@@ -40,52 +44,77 @@ const experiences: Experience[] = [
 
     startDate: "Feb",
     endDate: "Jul 2022",
+    link: "https://groundedpackaging.co/",
+  },
+  {
+    title: "Software Engineer Freelance",
+    commpany: "Toptal",
+    description:
+      "Built MVPs for various projects including a hair salon marketplace web app as well as an audio-based language learning mobile app.",
+    technologies: ["React", "React Native", "NestJS", "Docker"],
+
+    startDate: "2022",
+    endDate: "Present",
+    link: "https://www.toptal.com/",
   },
 ];
 const ExperienceSection = ({ className }: Props) => {
   return (
     <section id="experience" className={className}>
       <h2 className="text-foreground-primary mb-4 font-semibold">Experience</h2>
-      <div className="space-y-8">
+      <ul className="group/list">
         {experiences.map((exp, index) => (
-          <div
-            key={`experience-${index}`}
-            className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-          >
-            {/* left */}
-            <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-              {exp.startDate} - {exp.endDate}
-            </header>
-            {/* right */}
-            <div className="z-10 sm:col-span-6">
-              <div>
-                <h3 className="text-foreground-primary font-medium leading-snug ">
-                  {exp.title} @ {exp.commpany}
-                </h3>
-
-                <P className="mt-2 text-sm leading-normal text-foreground-secondary">
-                  {exp.description}
-                </P>
-                <ul
-                  className="mt-2 flex flex-wrap"
-                  aria-label="Technologies used"
-                >
-                  {exp.technologies.map((tech, subIndex) => (
-                    <li
-                      key={`experience-${index}-${subIndex}`}
-                      className="mr-1.5 mt-2"
+          <li className="mb-12">
+            <div
+              key={`experience-${index}`}
+              className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:cursor-pointer "
+            >
+              {/* left */}
+              <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                {exp.startDate} - {exp.endDate}
+              </header>
+              {/* right */}
+              <div className="z-10 sm:col-span-6">
+                <div>
+                  <h3 className="text-foreground-primary font-medium leading-snug ">
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      aria-label={`${exp.title}(opens in new tab))`}
+                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                      rel="noreferrer noopener"
                     >
-                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                        {tech}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+                      {/* make the entire card a link */}
+                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
+                      {exp.title} @ {exp.commpany}
+                      <FiExternalLink class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
+                    </a>
+                  </h3>
+
+                  <P className="mt-2 text-sm leading-normal text-foreground-secondary">
+                    {exp.description}
+                  </P>
+                  <ul
+                    className="mt-2 flex flex-wrap"
+                    aria-label="Technologies used"
+                  >
+                    {exp.technologies.map((tech, subIndex) => (
+                      <li
+                        key={`experience-${index}-${subIndex}`}
+                        className="mr-1.5 mt-2"
+                      >
+                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                          {tech}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };
