@@ -66,8 +66,8 @@ export default function Home() {
           {/* left */}
           <header
             className={cn(
-              "py-16",
-              "lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between  lg:py-24"
+              "py-20", //mobile
+              "lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24"
             )}
           >
             <div>

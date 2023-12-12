@@ -19,7 +19,7 @@ const experiences: Experience[] = [
     title: "Software Engineer",
     commpany: "Earnin",
     description:
-      "Developing a financial web app that enables more than 10,000 users/month to access their earnings before their payday. Working on our own  Design System .",
+      "Developing a financial web app that enables more than 10,000 users/month to access their earnings before their payday. Working on our own  Design System.",
     technologies: ["React", "Typescript", "Tailwindcss", "Playwright"],
     startDate: "2022",
     endDate: "Present",
