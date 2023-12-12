@@ -15,6 +15,7 @@ import HeroSection from "./components/sections/Hero.section";
 import ProjectSection from "./components/sections/Project.section";
 import SocialSection from "./components/sections/Social.section";
 import ToolsSection from "./components/sections/Tools.section";
+import BlogSection from "./components/sections/Blog.section";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState<SectionState>("about");
@@ -56,7 +57,7 @@ export default function Home() {
 
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-between bg-background-primary"
+      className="flex min-h-screen flex-col items-center justify-between bg-background-primary pb-12"
       ref={appRef}
     >
       <Navbar />
@@ -87,6 +88,9 @@ export default function Home() {
             </div>
             <div ref={projectsRef}>
               <ProjectSection className="mt-8 lg:mt-16" />
+            </div>
+            <div>
+              <BlogSection className="mt-8 lg:mt-16" />
             </div>
             <ToolsSection className="mt-8 lg:mt-24" />
           </div>
