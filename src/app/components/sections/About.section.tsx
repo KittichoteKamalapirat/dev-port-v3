@@ -6,7 +6,7 @@ interface Props {
 const AboutSection = ({ className }: Props) => {
   return (
     <section id="about" className={className}>
-      {/* <h2 className="text-foreground-primary mb-4 font-semibold">Hi!</h2> */}
+      <h2 className="text-foreground-primary mb-4 font-semibold">About</h2>
       <P className="text-foreground-secondary">
         I love{" "}
         <span className="text-foreground-primary">

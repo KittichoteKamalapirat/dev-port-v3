@@ -63,7 +63,7 @@ export default function Home() {
       <Navbar />
 
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-start">
+        <div className="lg:flex lg:justify-between lg:gap-4">
           {/* left */}
           <header
             className={cn(
@@ -79,21 +79,21 @@ export default function Home() {
           </header>
 
           {/* right */}
-          <div className="lg:py-24">
+          <main className="pt-12 lg:w-1/2 lg:py-24">
             <div ref={aboutRef}>
               <AboutSection />
             </div>
             <div ref={expRef}>
-              <ExperienceSection className="mt-8 lg:mt-16" />
+              <ExperienceSection className="mt-20 lg:mt-16" />
             </div>
             <div ref={projectsRef}>
-              <ProjectSection className="mt-8 lg:mt-16" />
+              <ProjectSection className="mt-20 lg:mt-16" />
             </div>
             <div>
-              <BlogSection className="mt-8 lg:mt-16" />
+              <BlogSection className="mt-20 lg:mt-16" />
             </div>
-            <ToolsSection className="mt-8 lg:mt-24" />
-          </div>
+            <ToolsSection className="mt-20 lg:mt-24" />
+          </main>
         </div>
 
         <div className="fixed pointer-events-none top-0 left-0 h-screen w-screen">
