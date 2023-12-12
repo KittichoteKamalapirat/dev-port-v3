@@ -17,7 +17,7 @@ const AboutSection = ({ className }: Props) => {
       <P className="mt-4 text-foreground-secondary">
         My current day-to-day technologies include{" "}
         <span className="text-foreground-primary">
-          TypeScript, Python, React, Tailwind, Postgres, GraphqQL, and Docker.
+          TypeScript, Python, React, Tailwind, Postgres, GraphQL, and Docker.
         </span>
       </P>
       <P className="mt-4 text-foreground-secondary">
