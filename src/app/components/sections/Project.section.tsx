@@ -25,6 +25,14 @@ const projects: Project[] = [
     thumbnail: "/jouzu.webp",
   },
   {
+    title: "Shareculator",
+    description: "Expense Calculator for Multiple Members Party",
+
+    technologies: ["React", "Typescript", "Tailwind", "Netlify"],
+    link: "https://www.shareculator.com/",
+    thumbnail: "/shareculator.webp",
+  },
+  {
     title: "Online Wedding Invitation",
     description:
       "A wedding website for my friend to make it easier for guests to RSVP and for us to manage the guest list.",
