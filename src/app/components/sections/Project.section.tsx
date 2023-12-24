@@ -25,6 +25,14 @@ const projects: Project[] = [
     thumbnail: "/jouzu.webp",
   },
   {
+    title: "React Smartbanner Package",
+    description: "A React package for displaying custom smartbanners",
+
+    technologies: ["React", "Typescript", "Tailwind", "NPM"],
+    link: "https://www.npmjs.com/package/custom-react-smartbanner",
+    thumbnail: "/smartbanner.svg",
+  },
+  {
     title: "Shareculator",
     description: "Expense Calculator for Multiple Members Party",
 
