@@ -16,9 +16,12 @@ import ProjectSection from "./components/sections/Project.section";
 import SocialSection from "./components/sections/Social.section";
 import ToolsSection from "./components/sections/Tools.section";
 import BlogSection from "./components/sections/Blog.section";
+import TimeMachineOverlay from "./components/TimeMachine/TimeMachineOverlay";
+import Image from "next/image";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState<SectionState>("about");
+  const [showTimeMachine, setShowTimeMachine] = useState<boolean>(false);
 
   const appRef = useRef<any>(); // TODO: fix any
   const {
@@ -57,7 +60,7 @@ export default function Home() {
 
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-between bg-background-primary pb-12"
+      className="flex min-h-screen flex-col items-center justify-between bg-background-primary pb-12 relative"
       ref={appRef}
     >
       <Navbar />
@@ -100,6 +103,30 @@ export default function Home() {
           <MouseUpdater />
         </div>
       </Container>
+
+      <TimeMachineOverlay
+        className={cn(
+          "fixed top-0 left-0 w-screen h-screen bg-background-primary",
+          "transition-opacity duration-500",
+          showTimeMachine ? "opacity-100 z-[100]" : "opacity-0"
+        )}
+        close={() => setShowTimeMachine(false)}
+      />
+
+      <button
+        className="absolute bottom-0 right-0"
+        onClick={() => setShowTimeMachine(true)}
+      >
+        <Image
+          alt="Doctor Who Time Machine"
+          src={"/doctor-who-time-machine.gif"}
+          width={100}
+          height={86}
+          loading="lazy"
+          decoding="async"
+          className="rounded-md w-[100px] h-[86px]"
+        />
+      </button>
     </main>
   );
 }

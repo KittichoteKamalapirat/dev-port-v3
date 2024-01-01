@@ -8,7 +8,7 @@ interface Props {
 }
 const ToolsSection = ({ className }: Props) => {
   return (
-    <section className={cn("text-sm", className)}>
+    <section className={cn("text-sm sm:w-8/12", className)}>
       {/* <h2 className="text-foreground-primary mb-4 font-semibold">Hi!</h2> */}
       <P className="text-foreground-secondary">
         Design inspired by{" "}
