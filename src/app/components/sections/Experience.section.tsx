@@ -57,6 +57,17 @@ const experiences: Experience[] = [
     endDate: "Present",
     link: "https://www.toptal.com/",
   },
+  {
+    title: "Software Engineer Contract",
+    commpany: "F Style",
+    description:
+      "Modernized and maintained the company’s landing page to be up-to-date.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+
+    startDate: "2020",
+    endDate: "2022",
+    link: "#",
+  },
 ];
 const ExperienceSection = ({ className }: Props) => {
   return (

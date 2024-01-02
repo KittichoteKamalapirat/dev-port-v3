@@ -14,7 +14,7 @@ const TimeMachine = ({ versions, currentVersion }: Props) => {
     <div className="w-[600px] h-[400px]">
       {versions
         .filter((ver) => ver.number <= currentVersion)
-        .map((version, index) => (
+        .map((version) => (
           <div className={styles.time} key={`version-${version.number}`}>
             {/* make the entire card a link */}
 
