@@ -15,13 +15,11 @@
 
 ![demo](https://kittishane.com/v3.webp)
 
-## 🚨 Forking this repo (please read!)
+## Forking this repo
 
-Feel free to fork and use this code for your portfolio, would appreciate the ** attribution** by linking back to [kittishane.com](https://kittishane.com). Thanks!.
+Feel free to fork and use this code for your portfolio, would appreciate the **attribution** by linking back to [kittishane.com](https://kittishane.com). Thanks!.
 
-This portfolio is highly inspired by [Brittany's V5](https://brittanychiang.com/)
-
-### TL;DR
+This portfolio is highly inspired by [brittany's V5](https://brittanychiang.com/)
 
 ## 🛠 Installation & Set Up
 
