@@ -108,7 +108,7 @@ export default function Home() {
         className={cn(
           "fixed top-0 left-0 w-screen h-screen bg-background-primary",
           "transition-opacity duration-500",
-          showTimeMachine ? "opacity-100 z-[100]" : "opacity-0"
+          showTimeMachine ? "opacity-100 z-[100]" : "opacity-0 -z-10"
         )}
         close={() => setShowTimeMachine(false)}
       />
