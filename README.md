@@ -10,7 +10,7 @@
 <p align="center">
   Previous iterations:
   <a href="https://github.com/KittichoteKamalapirat/dev-port-v1" target="_blank">v1</a>,
-  <a href="https://github.com/KittichoteKamalapirat/dev-port-v1" target="_blank">v2</a>,a>
+  <a href="https://github.com/KittichoteKamalapirat/dev-port-v1" target="_blank">v2</a>
 </p>
 
 ![demo](https://kittishane.com/v3.webp)
