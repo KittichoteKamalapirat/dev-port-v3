@@ -25,16 +25,16 @@ const experiences: Experience[] = [
     endDate: "Present",
     link: "https://earnin.com/",
   },
-  {
-    title: "Software Engineer Contract",
-    commpany: "Endo Supply",
-    description:
-      "Designed and coded an endoscope management system which connects to storage cabinets to monitor endoscope usage history in a public hospital.",
-    technologies: ["React", "Typescript", "Tailwindcss", "Node.JS"],
-    startDate: "Aug",
-    endDate: "Oct 2022",
-    link: "https://www.endo-supply.com/",
-  },
+  // {
+  //   title: "Software Engineer Contract",
+  //   commpany: "Endo Supply",
+  //   description:
+  //     "Designed and coded an endoscope management system which connects to storage cabinets to monitor endoscope usage history in a public hospital.",
+  //   technologies: ["React", "Typescript", "Tailwindcss", "Node.JS"],
+  //   startDate: "Aug",
+  //   endDate: "Oct 2022",
+  //   link: "https://www.endo-supply.com/",
+  // },
   {
     title: "Senior React Developer",
     commpany: "Grounded Packaging",
