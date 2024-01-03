@@ -121,5 +121,5 @@ export const colors = {
   ...semanticColors,
   ...primitiveColors,
   // Make border specific colors available in global color with prefix 'border'
-  border: borderColors,
+  ...borderColors,
 };

@@ -1,5 +1,6 @@
 import { FiExternalLink } from "react-icons/fi";
 import P from "../Text/P";
+import { cvLink } from "../../constants/links";
 
 interface Props {
   className?: string;
@@ -98,7 +99,7 @@ const ExperienceSection = ({ className }: Props) => {
                       {/* make the entire card a link */}
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                       {exp.title} @{exp.commpany}
-                      <FiExternalLink class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
+                      <FiExternalLink className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
                     </a>
                   </h3>
 
@@ -126,6 +127,36 @@ const ExperienceSection = ({ className }: Props) => {
           </li>
         ))}
       </ul>
+
+      <div className="mt-12">
+        <a
+          className="inline-flex items-baseline leading-tight text-foreground-primary hover:text-rose-400 focus-visible:text-rose-400 font-semibold group/link text-base"
+          href={cvLink}
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="View Full Résumé (opens in a new tab)"
+        >
+          <span>
+            View Full{" "}
+            <span className="inline-block">
+              Résumé
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+          </span>
+        </a>
+      </div>
     </section>
   );
 };
