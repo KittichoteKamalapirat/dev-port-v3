@@ -18,23 +18,6 @@ const projects: ProjectArchive[] = [
     thumbnail: "/jouzu.webp",
   },
   {
-    title: "Packaging CMS",
-    year: "2022",
-    madeAt: "Grounded Packaging",
-    technologies: ["NextJS", "GraphQL"],
-    link: "https://groundedpackaging.co/",
-    thumbnail: "/jouzu.webp",
-  },
-  {
-    title: "Endoscope iOT",
-    year: "2022",
-    madeAt: "Endo Supply",
-    technologies: ["NextJS", "GraphQL"],
-    // link: "https://www.endo-supply.com/",
-    link: "#",
-    thumbnail: "/jouzu.webp",
-  },
-  {
     title: "Japanese AI Tutor",
     year: "2023",
     madeAt: "",
@@ -50,6 +33,7 @@ const projects: ProjectArchive[] = [
     link: "https://www.npmjs.com/package/custom-react-smartbanner",
     thumbnail: "/smartbanner.svg",
   },
+
   {
     title: "Portfolio V3",
     year: "2023",
@@ -65,6 +49,23 @@ const projects: ProjectArchive[] = [
     technologies: ["Google Sheets API", "Google Maps API", "i18n"],
     link: "https://www.dev.parkandrotela.com/",
     thumbnail: "/wedding.webp",
+  },
+  {
+    title: "Endoscope iOT",
+    year: "2022",
+    madeAt: "Endo Supply",
+    technologies: ["NextJS", "GraphQL"],
+    // link: "https://www.endo-supply.com/",
+    link: "#",
+    thumbnail: "/jouzu.webp",
+  },
+  {
+    title: "Packaging CMS",
+    year: "2022",
+    madeAt: "Grounded Packaging",
+    technologies: ["NextJS", "GraphQL"],
+    link: "https://groundedpackaging.co/",
+    thumbnail: "/jouzu.webp",
   },
   {
     title: "Party Calculator",
