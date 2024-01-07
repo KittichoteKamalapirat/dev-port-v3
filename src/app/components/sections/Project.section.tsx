@@ -54,7 +54,7 @@ const projects: Project[] = [
     description:
       "A tool for generating iPhone mockups for your app screenshots.",
     technologies: ["NextJS", "Firebase", "ThreeJS"],
-    link: "https://mokei.vercel.app",
+    link: "https://mokei.vercel.app/design",
     thumbnail: "/mokei.webp",
   },
   {
