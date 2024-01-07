@@ -104,7 +104,7 @@ export default function Home() {
         </div>
       </Container>
 
-      <TimeMachineOverlay
+      {/* <TimeMachineOverlay
         className={cn(
           "fixed top-0 left-0 w-screen h-screen bg-background-primary",
           "transition-opacity duration-500",
@@ -126,7 +126,7 @@ export default function Home() {
           decoding="async"
           className="rounded-md w-[100px] h-[86px]"
         />
-      </button>
+      </button> */}
     </main>
   );
 }
