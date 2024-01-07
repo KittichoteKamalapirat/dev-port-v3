@@ -24,6 +24,39 @@ const projects: Project[] = [
     link: "https://www.jouzuspeak.com/",
     thumbnail: "/jouzu.webp",
   },
+
+  {
+    title: "Pizza Dough Calculator",
+    description: "A Calculator for making Neapolitan Pizza Dough",
+
+    technologies: ["Svelete", "Typescript", "Tailwind", "Github Pages"],
+    link: "https://kittichotekamalapirat.github.io/pizza-calc",
+    thumbnail: "/pizza-calc.webp",
+  },
+  // {
+  //   title: "Shareculator",
+  //   description: "Expense Calculator for Multiple Members Party",
+
+  //   technologies: ["React", "Typescript", "Tailwind", "Netlify"],
+  //   link: "https://www.shareculator.com/",
+  //   thumbnail: "/shareculator.webp",
+  // },
+  // {
+  //   title: "Online Wedding Invitation",
+  //   description:
+  //     "A wedding website for my friend to make it easier for guests to RSVP and for us to manage the guest list.",
+  //   technologies: ["Google Sheets API", "Google Maps API", "i18n"],
+  //   link: "https://www.dev.parkandrotela.com/",
+  //   thumbnail: "/wedding.webp",
+  // },
+  {
+    title: "iPhone Mockup Generator",
+    description:
+      "A tool for generating iPhone mockups for your app screenshots.",
+    technologies: ["NextJS", "Firebase", "ThreeJS"],
+    link: "https://mokei.vercel.app",
+    thumbnail: "/mokei.webp",
+  },
   {
     title: "React Smartbanner Package",
     description: "A React package for displaying custom smartbanners",
@@ -31,22 +64,6 @@ const projects: Project[] = [
     technologies: ["React", "Typescript", "Tailwind", "NPM"],
     link: "https://www.npmjs.com/package/custom-react-smartbanner",
     thumbnail: "/smartbanner.svg",
-  },
-  {
-    title: "Shareculator",
-    description: "Expense Calculator for Multiple Members Party",
-
-    technologies: ["React", "Typescript", "Tailwind", "Netlify"],
-    link: "https://www.shareculator.com/",
-    thumbnail: "/shareculator.webp",
-  },
-  {
-    title: "Online Wedding Invitation",
-    description:
-      "A wedding website for my friend to make it easier for guests to RSVP and for us to manage the guest list.",
-    technologies: ["Google Sheets API", "Google Maps API", "i18n"],
-    link: "https://www.dev.parkandrotela.com/",
-    thumbnail: "/wedding.webp",
   },
 ];
 const ProjectSection = ({ className }: Props) => {
